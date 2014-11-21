@@ -7,7 +7,7 @@ end
 
 
 def create_toy(cat, overrides = {})
-  Toy.create!(
+  Toy.create!({
   name: 'Lasagna',
   cat_id: cat.id
 }.merge(overrides)
