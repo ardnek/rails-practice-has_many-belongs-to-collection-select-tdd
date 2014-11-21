@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature 'Toys' do
-  scenario 'User can see list of cats and their toys on toys index page' do
+  scenario 'User can see list of cats and their toys on toys index page / Toy index page should list the cat that owns each of the toys listed' do
     cat = Cat.create!(
       :name => 'Omar'
     )
@@ -29,7 +29,7 @@ feature 'Toys' do
     expect(page).to have_content(cat.name)
   end
 
-  scenario 'Toy show page should list the cat that owns that toy (toys are not shared)' do
+  scenario 'Toy show page should list the cat that owns that toy (toys are not shared) / Toy new page should create a new toy and cat ownership and list it on the index' do
 
     cat = Cat.create!(
     :name => 'Omar'

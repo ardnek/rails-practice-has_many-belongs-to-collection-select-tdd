@@ -3,7 +3,7 @@ require 'rails_helper'
 #Each Cat show page should list the toys that cat owns.
 
 feature 'Cats' do
-  scenario 'User can view a cats toy on the show page' do
+  scenario 'User can view a cats toy on the show page / Each Cat show page should list the toys that cat owns' do
     cat = Cat.create!(
     :name => 'Omar'
     )
